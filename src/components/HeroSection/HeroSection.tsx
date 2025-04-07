@@ -286,12 +286,12 @@ export default function HeroSection() {
                             </Marquee>
                         </div>
                         <h2>
-                            Let's👋
+                            Let&apos;s👋
                             <br />
                             Work Together
                         </h2>
                         <Link href='#'>
-                            Let's Talk
+                            Let&apos;s Talk
                             <i className="hgi hgi-stroke hgi-arrow-up-right-01"></i>
                         </Link>
                     </div>
