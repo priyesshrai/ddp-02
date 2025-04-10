@@ -8,9 +8,9 @@ export default function Header() {
     const [openMenu, setOpenMenu] = useState(false);
     return (
         <motion.header
-            initial={{ opacity: 0, filter: "blur(10px)" }}
+            initial={{ opacity: 0}}
             transition={{ duration: 0.2, ease: "easeInOut" }}
-            animate={{ opacity: 1, filter: "blur(0px)" }}
+            animate={{ opacity: 1}}
             className='header'>
             <nav className='navbar'>
                 <div className="menu-container">
@@ -23,14 +23,14 @@ export default function Header() {
                         <ul className='links-wraper'>
                             <li className='mob-logo'>
                                 <Link href='/'>
-                                    <Image src='/images/logo/logo.png' width={160} height={27} alt='This is logo' />
+                                    <Image src='/images/user/logo.png' width={220} height={50} alt='This is logo' />
                                 </Link>
                             </li>
-                            {/* <li>
+                            <li>
                                 <Link href='/' className='active'>
-                                    <i className="hgi hgi-stroke hgi-home-01"></i>
+                                    <i className="hgi hgi-stroke hgi-user-sharing"></i>
                                     <span>
-                                        Home
+                                        Profile
                                     </span>
                                 </Link>
                             </li>
@@ -46,7 +46,7 @@ export default function Header() {
                                 <Link href='/services'>
                                     <i className="hgi hgi-stroke hgi-layers-01"></i>
                                     <span>
-                                        Services
+                                        Education/Experience
                                     </span>
                                 </Link>
                             </li>
@@ -54,7 +54,7 @@ export default function Header() {
                                 <Link href='/work'>
                                     <i className="hgi hgi-stroke hgi-ai-beautify"></i>
                                     <span>
-                                        Work
+                                        Projects / Activities
                                     </span>
                                 </Link>
                             </li>
@@ -62,18 +62,10 @@ export default function Header() {
                                 <Link href='/blog'>
                                     <i className="hgi hgi-stroke hgi-license-draft"></i>
                                     <span>
-                                        Blog
+                                        Skills/ Tools
                                     </span>
                                 </Link>
                             </li>
-                            <li>
-                                <Link href='/contact'>
-                                    <i className="hgi hgi-stroke hgi-message-add-01"></i>
-                                    <span>
-                                        Contact
-                                    </span>
-                                </Link>
-                            </li> */}
                         </ul>
                     </div>
                     <div className={`btn-container ${openMenu ? 'menu-active' : ""}`}>
@@ -82,8 +74,8 @@ export default function Header() {
                                 <i className="hgi hgi-stroke hgi-sharp hgi-sun-02"></i>
                             </div> */}
                             <Link href='/contact'>
-                                Let&apos;s Talk
-                                <i className="hgi hgi-stroke hgi-sent"></i>
+                                <i className="hgi hgi-stroke hgi-video-replay"></i>
+                                View Videos
                             </Link>
                         </div>
                     </div>
