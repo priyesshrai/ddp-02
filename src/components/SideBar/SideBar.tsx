@@ -10,12 +10,12 @@ export default function SideBar() {
   
   const bio = "Hi, I am Pragati Gupta. I am a B.Com graduate from <strong>Sunbeam College for women with NDMCC certification in Digital Marketing</strong>. I’ve worked as a <strong>Social Media Manager at Wizards and interned at IWAY DIGITAL</strong> as a <strong>Digital Marketing Executive</strong>. Currently working as an <strong>Admin & Business Manager</strong>. Passionate about digital strategy, content creation, and helping businesses grow online."
 
-  function handleEmailBtn() {
-    const email = "guptapragati02@gmail.com";
-    navigator.clipboard.writeText(email)
-      .then(() => alert("Email copied to clipboard!"))
-      .catch(err => console.error("Failed to copy email: ", err));
-  }
+  // function handleEmailBtn() {
+  //   const email = "guptapragati02@gmail.com";
+  //   navigator.clipboard.writeText(email)
+  //     .then(() => alert("Email copied to clipboard!"))
+  //     .catch(err => console.error("Failed to copy email: ", err));
+  // }
 
   // Helper to trim HTML-safe bio string
   const getTrimmedBio = () => {
